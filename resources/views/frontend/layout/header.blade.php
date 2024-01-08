@@ -42,7 +42,7 @@
                         </ul>
                     </li>
                     <li><a href="{{ route('home')}}" class="nav-link">Referanslar</a></li>
-                    <li><a href="{{ route('home')}}" class="nav-link">İletişim</a></li>
+                    <li><a href="{{ route('contactus')}}" class="nav-link">İletişim</a></li>
 
                 </ul>
             </div>

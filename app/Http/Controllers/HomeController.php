@@ -86,7 +86,7 @@ class HomeController extends Controller
         SEOMeta::setTitle('İletişim | Denden Yachts | İstanbul');
         SEOMeta::setDescription("Denden Yachts | İstanbul");
         SEOMeta::setCanonical(url()->full());
-        return view('frontend.corporate.contactus');
+        return view('frontend.contact');
 
     }
 
@@ -100,5 +100,6 @@ class HomeController extends Controller
 
         return view('frontend.blog.index');
     }
+
 
 }

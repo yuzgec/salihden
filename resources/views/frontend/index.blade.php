@@ -1,6 +1,18 @@
 @extends('frontend.layout.app')
 @section('customCSS')
     <link rel="stylesheet" href="/frontend/css/revolutionslider/settings.css" />
+
+    <style>
+        .portfolio-items, .portfolio-items .cbp-wrapper-outer, .portfolio-items .cbp-item{overflow:visible;}
+        .portfolio-items .cbp-item:hover{z-index: 150;}
+        .portfolio-items .cbp-item .keeper{
+            -webkit-transition: box-shadow 0.5s cubic-bezier(0.77, 0, 0.2, 1);
+            transition: box-shadow 0.5s cubic-bezier(0.27, 0, 0.2, 1);
+        }
+        .portfolio-items .cbp-item:hover .keeper{
+            box-shadow: 0 62px 70px -14px rgba(0,0,0,0.23);
+        }
+    </style>
 @endsection
 @section('content')
     @include('frontend.layout.slider')
@@ -46,40 +58,78 @@
             <source src="images/videos/video-2.webm" type="video/webm">
                 <source src="/istanbul.mp4" type="video/mp4"></video>
             </div>
-            <!-- End Video -->
             <div class="relative zi-1">
                 <h2 class="t-center white bold fs-40">BOĞAZIN EŞSİZ GÜZELLİĞİNDE TEKNE TURLARI</h2>
             </div>
         </div>
 
-    <section id="element-template-01" class="py-50 bt-1 bg-dark b-solid">
+    <div id="portfolio-grid" class="pb-120 pt-90" style="background: url('/back.jpg')">
         <div class="container">
             <h4 class="text-center text-white">{{ __('site.firmaadi')}} </h4>
             <h2 class="text-center text-white fs-50">DENDEN DENİZCİLİK</h2>
             <p class="text-center text-white">Denden yat kiralama lüks bir tatil deneyimi için mükemmel bir seçenektir.<br> Denizde keyifli dakikalar geçirmek için eşsiz bir fırsat sunuyor.</p>
-            <div id="image-slider-container" class="mt-50 mt-50-sm o-hidden-x mxw-full">
-                <div id="image-slider" class="custom-slider fw-slider container block-img dots-circle c-resize" 
-                    data-slick='{"dots": true, "centerMode": true, "speed":600, "arrows": true, "fade": false, "draggable":true, "slidesToShow": 3, "slidesToScroll": 3}'>
-                    @foreach ($Odullerimiz->getMedia('gallery') as $item)
-                        <div class="px-15 px-5-sm">
-                            <img src="/frontend/images/blog/post_large_slider_loader.svg" 
-                            data-lazy="{{ $item->getUrl() }}" alt="Denden Yatçılık - Ödüllerimiz" 
-                            class="bs-lg">
+         
+            <div id="portfolio-items" class="portfolio-items mt-40">
+                @foreach ($Product as $item)
+                <a href="{{ route('productdetail',  $item->slug)}}" class="cbp-item fashion photography">
+                    <div class="keeper bg-white opacity-hover-container">
+                        <div class="work-image">
+                            <img src="images/portfolio/masonry_loading.svg" 
+                            data-cbp-src="{{ (!$item->getFirstMediaUrl('page')) ? '/resimyok.jpg' : $item->getFirstMediaUrl('page', 'thumb') }}"
+                             width="700" height="478" alt="Denden Yatçılık - {{ $item->title}}">
                         </div>
-                    @endforeach
-                </div>
-                <div class="mt-30 container t-center">
-                    <a href="{{ route('corporatedetail', $Odullerimiz->slug)}}" target="_blank" class="lg-btn inline-block mt-30 bg-colored bg-colored1-hover white fs-11 bold uppercase slow-sm">
-                        Hepsini Görüntüle
-                    </a>
-                </div>
+                        <div class="details px-30 py-30">
+                            <h3 class="fs-18 mt-5 dark5 lh-normal">{{ $item->title}} </h3>
+                        </div>
+                    </div>
+                </a>
+                @endforeach
             </div>
         </div>
-    </section>
+
+    </div>
 
 @endsection
 
 @section('customJS')
+
+  <!-- Script for portfolio -->
+  <script>
+    (function($, window, document, undefined) {
+        'use strict';
+        // init cubeportfolio
+        $('#portfolio-items').cubeportfolio({
+            mediaQueries: [{
+                width: 992,
+                cols: 3,
+            }, {
+                width: 640,
+                cols: 2,
+            }, {
+                width: 480,
+                cols: 1,
+            }],
+            filters: '.filter-tags',
+            defaultFilter: '*',
+            layoutMode: 'masonry',
+            gridAdjustment: 'responsive',
+            gapHorizontal: 20,
+            gapVertical: 20,
+            caption: 'none',
+            animationType: 'quicksand',
+            displayType: 'none',
+            displayTypeSpeed: 60,
+        });
+
+        //Get .active class for filters
+        $(".cbp-filter-item-active").addClass("active");
+        $("[data-filter]").on("click", function(){
+            $("[data-filter]").removeClass("active");
+            $(".cbp-filter-item-active").addClass("active");
+        });
+
+    })(jQuery, window, document);
+</script>
 <script src="/frontend/js/revolutionslider/jquery.themepunch.revolution.min.js"></script>
 <script src="/frontend/js/revolutionslider/jquery.themepunch.tools.min.js"></script>
 <script>
