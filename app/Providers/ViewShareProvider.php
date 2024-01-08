@@ -24,7 +24,7 @@ class ViewShareProvider extends ServiceProvider
 
         if (! app()->runningInConsole()) {
             Paginator::useBootstrap();
-            //config()->set('settings', Setting::pluck('value','item')->all());
+            config()->set('settings', Setting::pluck('value','item')->all());
 
             $Pages =  Page::with('getCategory')->orderBy('rank', 'asc')->get();
             $Service =  Service::with('getCategory')->orderBy('rank', 'asc')->get();
