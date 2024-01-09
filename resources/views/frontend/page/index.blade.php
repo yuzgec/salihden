@@ -2,6 +2,7 @@
 @section('content')
 
 <section id="home" class="relative white height-20vh height-20vh-sm mnh-450 align-items-center d-flex">
+
     <div class="videobg bg-soft bg-soft-dark2" data-background="images/videos/video-2-poster.jpg">
         <video poster="images/videos/video-2-poster.jpg" playsinline autoplay muted loop>
             <source src="/istanbul.mp4" type="video/mp4">
@@ -26,7 +27,7 @@
 </section>
 
 @if($Detay->desc != null)
-<div id="elementDescription" class="container py-100 py-100-sm">
+<div id="elementDescription" class="container py-50">
     <span class="fs-16 fs-16-sm gray7 ls-0 lh-35 light">
         {!! $Detay->desc !!}
     </span>
@@ -35,7 +36,6 @@
 
 <section id="portfolio-grid" class="pb-60 pt-50 bt-1 b-gray1 b-solid lightbox_gallery">
     <div class="container ">
-  
         <div id="portfolio-items" class="">
             @foreach ($Detay->getMedia('gallery') as $item)
             <a href="{{ $item->getUrl() }}" class="cbp-item art photography d-block has-overlay-hover">
@@ -60,7 +60,7 @@
         $('#portfolio-items').cubeportfolio({
             mediaQueries: [{
                 width: 992,
-                cols: 3,
+                cols: 4,
             }, {
                 width: 640,
                 cols: 2,
