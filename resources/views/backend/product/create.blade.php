@@ -46,10 +46,10 @@
                                 <div class="text-center mb-2">
                                     <img src="/frontend/flag/{{ $localeCode }}.svg" width="20px"><span  style="margin-left:10px">{{ $properties['native'] }} dili ilgili ayarları yapıyorsunuz.</span>
                                 </div>
-                                <x-form-inputtext label="Başlık Adı Giriniz" name="title:{{ $localeCode }}"/>
-                                <x-form-textarea label="Kısa Açıklama" name="short:{{ $localeCode }}"/>
+                                <x-form-inputtext label="Başlık Giriniz" name="title:{{ $localeCode }}"/>
 
                                 <x-form-textarea label="Açıklama" name="desc:{{ $localeCode }}" ck="aciklama{{ $localeCode }}"/>
+                                <x-form-textarea label="Özellikler" name="short:{{ $localeCode }}" ck="short{{ $localeCode }}"/>
 
                                 <div class="card-header mb-2">
                                     <h4 class="card-title">
@@ -95,112 +95,7 @@
             </div>
 
             <input type="text" placeholder="Ürün Kodu" name="sku" class="form-control">
-        {{--    <div class="form-group mb-3 row">
-                <div class="col-6 mt-1">
-                    <div class="input-group mb-2">
-                        <span class="input-group-text">₺</span>
-                        <input type="text" placeholder="Ürün Fiyat" name="price" class="form-control">
-                    </div>
-                </div>
-                <div class="col-6 mt-1">
-                    <div class="input-group mb-2">
-                        <span class="input-group-text">₺</span>
-                        <input type="text" placeholder="Ürün Eski Fiyat" name="old_price" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="form-group mb-3 p-1 row">
-                <div class="mb-3">
-                    <label class="form-label">Ürün Özellikleri</label>
-                    <div class="divide-y">
-                        <div>
-                            <label class="row">
-                                <span class="col">Özellik 1</span>
-                                <span class="col-auto">
-                                    <label class="form-check form-check-single form-switch">
-                                        <input class="form-check-input" type="checkbox" name="option1" value="0">
-                                    </label>
-                                  </span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="row">
-                                <span class="col">Özellik 2</span>
-                                <span class="col-auto">
-                                    <label class="form-check form-check-single form-switch">
-                                    <input class="form-check-input" type="checkbox" name="option2" value="0">
-                                    </label>
-                                  </span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="row">
-                                <span class="col">Özellik 3</span>
-                                <span class="col-auto">
-                                    <label class="form-check form-check-single form-switch">
-                                    <input class="form-check-input" type="checkbox" name="option3" value="0">
-                                    </label>
-                                  </span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="row">
-                                <span class="col">Özellik 4</span>
-                                <span class="col-auto">
-                                    <label class="form-check form-check-single form-switch">
-                                    <input class="form-check-input" type="checkbox" name="option4" value="0">
-                                    </label>
-                                  </span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Ürün Etiketleri</label>
-                <div class="divide-y">
-                    <div>
-                        <label class="row">
-                            <span class="col">Fırsat Ürünü</span>
-                            <span class="col-auto">
-                                <label class="form-check form-check-single form-switch">
-                                      <input class="form-check-input" type="checkbox" name="opportunity" value="0">
-                                </label>
-                              </span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class="row">
-                            <span class="col">Kampanyalı Ürün</span>
-                            <span class="col-auto">
-                                <label class="form-check form-check-single form-switch">
-                                  <input class="form-check-input" type="checkbox" name="offer" value="0">
-                                </label>
-                              </span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class="row">
-                            <span class="col">Çok Satan</span>
-                            <span class="col-auto">
-                                <label class="form-check form-check-single form-switch">
-                                  <input class="form-check-input" type="checkbox" name="bestselling" value="0">
-                                </label>
-                              </span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class="row">
-                            <span class="col">Ücretsiz Kargo</span>
-                            <span class="col-auto">
-                                <label class="form-check form-check-single form-switch">
-                                  <input class="form-check-input" type="checkbox" name="freecargo" value="0">
-                                </label>
-                              </span>
-                        </label>
-                    </div>
-                </div>
-            </div>--}}
+     
         </div>
 
 

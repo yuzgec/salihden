@@ -58,30 +58,14 @@
 
 </section>
 
-@if($Detay->desc != null)
-    <div id="elementDescription" class="container py-50">
-        <span class="fs-16 fs-16-sm gray7 ls-0 lh-35 light">
-            {!! $Detay->desc !!}
-        </span>
-    </div>
-@endif
-<div class="container mb-50 mt-20">
-    <div class="row">
+<div id="elementDescription" class="container py-50">
+    <span class="fs-16 fs-16-sm gray7 ls-0 lh-35 light">
+        {!! $Detay->desc !!}
 
-        <div class="col-md-4 col-12">
-            <div class="card">
-                <div class="card-header">Featured</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-              </div>
-        </div>
-
-    </div>
-  
+        {!! $Detay->short !!}
+    </span>
 </div>
+
 <div class="container mb-50 mt-20">
     <div id="gallery-items" class="lightbox_gallery">
         @foreach ($Detay->getMedia('gallery') as $item)

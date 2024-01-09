@@ -1,19 +1,21 @@
 <nav id="navigation" class="modern-nav sticky bordered link-hover-02 nav-dark bg-dark" data-offset="0">
 
-<div id="top-bar-1624312452" class="top-bar height-50 height-50-sm bg-dark" data-expire="0.021" style="border-bottom:0.5px solid gray">
+<div id="top-bar-1624312452" class="top-bar height-50 height-50-sm bg-dark" data-expire="0.021">
     <div class="container">
         <div class="row align-items-center">
             <div
                 class="col-lg-6 col-sm-12 d-flex t-left t-center-sm justify-content-lg-start justify-content-center hidden-sm">
                 <a
-                    href="#"
-                    class="fs-14 mr-30 white underline-hover-slide underline-slide underline-white">Our Services</a>
+                    href="tel:{{ config('settings.telefon2')}}"
+                    class="fs-14 mr-30 white underline-hover-slide underline-slide underline-white">
+                    <i class="fas fa-phone-volume mt-5"></i>&nbsp;{{ config('settings.telefon2')}}
+                </a>
                 <a
-                    href="#"
-                    class="fs-14 mr-30 white underline-hover-slide underline-slide underline-white">About Us</a>
-                <a
-                    href="#"
-                    class="fs-14 white underline-hover-slide underline-slide underline-white">Contact</a>
+                    href="mailto:{{ config('settings.email1')}}"
+                    class="fs-14 mr-30 white underline-hover-slide underline-slide underline-white">
+                    <i class="far fa-envelope mt-5"></i>&nbsp;{{ config('settings.email1')}}
+                </a>
+              
             </div>
 
             <div class="col-lg-6 col-sm-12 mt-10-sm d-flex t-right t-center-sm align-items-center justify-content-lg-end justify-content-center">
