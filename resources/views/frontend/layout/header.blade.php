@@ -6,15 +6,20 @@
             <div
                 class="col-lg-6 col-sm-12 d-flex t-left t-center-sm justify-content-lg-start justify-content-center hidden-sm">
                 <a
+                    href="tel:{{ config('settings.telefon1')}}"
+                    class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
+                    <i class="fas fa-phone-volume mt-5"></i>&nbsp;{{ config('settings.telefon1')}}
+                </a>
+                <a
                     href="tel:{{ config('settings.telefon2')}}"
                     class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
                     <i class="fas fa-phone-volume mt-5"></i>&nbsp;{{ config('settings.telefon2')}}
                 </a>
                 <a
-                href="tel:{{ config('settings.telefon2')}}"
-                class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
-                <i class="fas fa-phone-volume mt-5"></i>&nbsp;{{ config('settings.telefon1')}}
-            </a>
+                    href="tel:{{ config('settings.telefon3')}}"
+                    class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
+                    <i class="fas fa-phone-volume mt-5"></i>&nbsp;{{ config('settings.telefon3')}}
+                </a>
                 <a
                     href="mailto:{{ config('settings.email1')}}"
                     class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
