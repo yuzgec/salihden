@@ -23,6 +23,12 @@ class ViewShareProvider extends ServiceProvider
 
 
         if (! app()->runningInConsole()) {
+
+            
+            define('SWEETALERT_MESSAGE_CREATE', 'Eklendi');
+            define('SWEETALERT_MESSAGE_UPDATE', 'Güncellendi');
+            define('SWEETALERT_MESSAGE_DELETE', 'Silindi');
+
             Paginator::useBootstrap();
             config()->set('settings', Setting::pluck('value','item')->all());
 

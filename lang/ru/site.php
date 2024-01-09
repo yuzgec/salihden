@@ -44,9 +44,9 @@ return [
     'urun_link' => 'машинерия',
     'yedekparca_link' => 'запчасти',
     'galeri_link' => 'галерея',
-    'iletisim_link' => 'контакт',
+    'iletisim_link' => 'kontakt',
     'blog_link' => 'блог',
-    'kurumsal_link' => 'корпоративный',
-    'referans_link' => 'референс',
+    'kurumsal_link' => 'korporativnyj',
+    'referans_link' => 'referens',
     'kategori_link' => 'категория',
 ];
