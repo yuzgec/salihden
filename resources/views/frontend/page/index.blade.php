@@ -25,7 +25,7 @@
     </div>
 </section>
 
-@if($Detay->desc)
+@if($Detay->desc != null)
 <div id="elementDescription" class="container py-100 py-100-sm">
     <span class="fs-16 fs-16-sm gray7 ls-0 lh-35 light">
         {!! $Detay->desc !!}
