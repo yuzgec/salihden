@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div
-                class="col-lg-6 col-sm-12 d-flex t-left t-center-sm justify-content-lg-start justify-content-center hidden-sm">
+                class="col-lg-8 col-sm-12 d-flex t-left t-center-sm justify-content-lg-start justify-content-center hidden-sm">
                 <a
                     href="tel:{{ config('settings.telefon1')}}"
                     class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
@@ -28,7 +28,7 @@
               
             </div>
 
-            <div class="col-lg-6 col-sm-12 mt-10-sm d-flex t-right t-center-sm align-items-center justify-content-lg-end justify-content-center">
+            <div class="col-lg-4 col-sm-12 mt-10-sm d-flex t-right t-center-sm align-items-center justify-content-lg-end justify-content-center">
                 @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                 <a
                     href="{{ LaravelLocalization::getLocalizedURL($localeCode, '/', [], true) }}"
