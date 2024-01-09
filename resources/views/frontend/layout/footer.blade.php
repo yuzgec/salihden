@@ -15,15 +15,15 @@
                 <a href="mailto:{{ config('settings.email1')}}" class="colored-hover fs-22 white  mt-15 block">{{ config('settings.email1')}}</a>
 
                 <div class="mt-30">
-                    <a href="{{ config('settings.youtube')}}"
+                    <a href="https://www.youtube.com/{{ config('settings.youtube')}}"
                         class="icon-xs width-40 height-40 bg-twitter-hover bg-gray7 white slow-sm ">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="{{ config('settings.facebook')}}"
+                    <a href="https://www.facebook.com/{{ config('settings.facebook')}}"
                         class="icon-xs width-40 height-40 bg-facebook-hover bg-gray7 white slow-sm ml-10 ml-0-sm mr-10-sm">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a  href="{{ config('settings.instagram')}}"
+                    <a  href="https://www.instagram.com/{{ config('settings.instagram')}}"
                         class="icon-xs width-40 height-40 bg-instagram-hover bg-gray7 white slow-sm ml-10 ml-0-sm mr-10-sm">
                         <i class="fab fa-instagram"></i>
                     </a>

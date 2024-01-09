@@ -48,6 +48,7 @@
     </div>    
     <div class="container nav-container">
         <div class="row nav-wrapper">
+
             <div class="col">
                 <a href="{{ route('home')}}" class="logo">
                     <img src="/denden_logo_b.png" alt="DENDEN DENİZCİLİK" class="logo-white" >
@@ -56,13 +57,20 @@
 
             <div class="col nav-menu">
                 <ul class="nav-links justify-content-center">
-                    <li class="logo-for-mobile-navigation"><img src="/denden_logo_b.png" alt="DENDEN DENİZCİLİK" style="width:200px;margin-top:30px"></li>
+
+                    <li class="logo-for-mobile-navigation">
+                        <a href="{{ route('home')}}">
+                            <img src="/denden_logo_b.png" alt="DENDEN DENİZCİLİK" style="width:200px;margin-top:30px">
+                        </a>
+                    </li>
+
                     <li><a href="{{ route('home')}}" class="nav-link">{{__('site.anasayfa')}}</a></li>
+
                     <li class="dd-toggle">
                         <a href="#" class="nav-link">{{__('site.kurumsal')}}</a>
-                        <ul class="dropdown-menu to-right">
+                        <ul class="dropdown-menu">
                             @foreach ($Pages->where('category', 1) as $item)
-                                <li class="dd-toggle">
+                                <li>
                                     <a href="{{ route('corporatedetail',  $item->slug)}}" class="nav-link">{{ $item->title }}</a>
                                 </li>
                             @endforeach
@@ -70,9 +78,9 @@
                     </li>
                     <li class="dd-toggle">
                         <a href="#" class="nav-link">{{__('site.hizmetlerimiz')}}</a>
-                        <ul class="dropdown-menu to-right">
+                        <ul class="dropdown-menu ">
                             @foreach ($Service as $item)
-                                <li class="dd-toggle">
+                                <li>
                                     <a href="{{ route('servicedetail',  $item->slug)}}" class="nav-link">{{ $item->title }}</a>
                                 </li>
                             @endforeach
@@ -80,9 +88,9 @@
                     </li>
                     <li class="dd-toggle">
                         <a href="#" class="nav-link">{{ __('site.yatlar')}}</a>
-                        <ul class="dropdown-menu to-right">
+                        <ul class="dropdown-menu ">
                             @foreach ($Product as $item)
-                                <li class="dd-toggle">
+                                <li>
                                     <a href="{{ route('productdetail',  $item->slug)}}" class="nav-link">{{ $item->title }}</a>
                                 </li>
                             @endforeach
@@ -91,9 +99,9 @@
                     <li><a href="{{ route('home')}}" class="nav-link">Blog</a></li>
                     <li class="dd-toggle">
                         <a href="#" class="nav-link">{{ __('site.referanslar')}}</a>
-                        <ul class="dropdown-menu to-right">
+                        <ul class="dropdown-menu ">
                             @foreach ($Pages->where('category', 2) as $item)
-                                <li class="dd-toggle">
+                                <li>
                                     <a href="{{ route('corporatedetail',  $item->slug)}}" class="nav-link">{{ $item->title }}</a>
                                 </li>
                             @endforeach
