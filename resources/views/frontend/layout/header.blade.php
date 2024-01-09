@@ -84,7 +84,16 @@
                         </ul>
                     </li>
                     <li><a href="{{ route('home')}}" class="nav-link">Blog</a></li>
-                    <li><a href="{{ route('home')}}" class="nav-link">{{ __('site.referanslar')}}</a></li>
+                    <li class="dd-toggle">
+                        <a href="#" class="nav-link">{{ __('site.referanslar')}}</a>
+                        <ul class="dropdown-menu to-right">
+                            @foreach ($Pages->where('category', 2) as $item)
+                                <li class="dd-toggle">
+                                    <a href="{{ route('corporatedetail',  $item->slug)}}" class="nav-link">{{ $item->title }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </li>
                     <li><a href="{{ route('contactus')}}" class="nav-link">{{ __('site.iletisim')}}</a></li>
 
                 </ul>
