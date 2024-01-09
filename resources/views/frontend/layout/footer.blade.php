@@ -1,7 +1,7 @@
 <footer id="footer" class="pt-80 bg-dark b-0 relative">
     <div class="absolute left-0 top-0 zi--1 pointer-events-none fullwidth fullheight">
         <a href="{{ route('home')}}" class="logo">
-            <img src="/denden_logo_b.png" alt="website logo" class="logo-white" >
+            <img src="/denden_logo_b.png" alt="{{ __('site.firma')}}" class="logo-white" >
         </a>
     </div>
     <div class="container">
@@ -9,7 +9,7 @@
         <div class="row row-eq-height">
             <div class="col-md-3 col-12 mt-40 t-left">
                 <a href="{{ route('home')}}" class="logo">
-                    <img src="/denden_logo_b.png" alt="website logo" class="img-fluid" style="max-width:200px">
+                    <img src="/denden_logo_b.png" alt="{{ __('site.firma')}}" class="img-fluid" style="max-width:200px">
                 </a>
                 <a href="tel:{{ config('settings.telefon1')}}" class="colored-hover fs-22 white  block mt-40">{{ config('settings.telefon1')}} </a>
                 <a href="mailto:{{ config('settings.email1')}}" class="colored-hover fs-22 white  mt-15 block">{{ config('settings.email1')}}</a>
@@ -31,7 +31,7 @@
                         
                 </div>
             <div class="col-md-3 col-12 mt-40 t-left">
-                <h4 class="text-white ">Kurumsal</h4>
+                <h4 class="text-white ">{{ __('site.kurumsal')}}</h4>
                 <ul class="list list-lg px-0 gray5 pt-40 fs-16">
                     @foreach ($Pages as $item)
                         <li>
@@ -41,7 +41,7 @@
                 </ul> 
             </div>
             <div class="col-md-3 col-12 mt-40 t-left">
-                <h4 class="text-white ">Hizmetlerimiz</h4>
+                <h4 class="text-white ">{{ __('site.hizmetlerimiz')}}</h4>
                 <ul class="list list-lg px-0 gray5 pt-40 fs-16">
                     @foreach ($Service as $item)
                         <li>
@@ -51,7 +51,7 @@
                 </ul> 
             </div>
             <div class="col-md-3 col-12 mt-40 t-left">
-                <h4 class="text-white ">Yatlar</h4>
+                <h4 class="text-white ">{{ __('site.yatlar')}}</h4>
                 <ul class="list list-lg px-0 gray5 pt-40 fs-16">
                     @foreach ($Product as $item)
                         <li>

@@ -14,8 +14,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
 
     Route::get(__('site.kurumsal_link').'/{url}', [HomeController::class, 'corporatedetail'])->name('corporatedetail');
     Route::get('/hizmetlerimiz/{url}', [HomeController::class, 'servicedetail'])->name('servicedetail');
-    Route::get('yatlarimiz/{url}', [HomeController::class, 'productdetail'])->name('productdetail');
-    Route::get('iletisim/', [HomeController::class, 'contactus'])->name('contactus');
+    Route::get('/yatlarimiz/{url}', [HomeController::class, 'productdetail'])->name('productdetail');
+    Route::get(__('site.iletisim_link'), [HomeController::class, 'contactus'])->name('contactus');
 });
 
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {

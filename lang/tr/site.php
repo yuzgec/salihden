@@ -8,9 +8,17 @@ return [
     'adres' => 'Adres',
     'anasayfa' => 'Anasayfa',
     'kurumsal' => 'Kurumsal',
+    'hizmetlerimiz' => 'Hizmetlerimiz',
+    'yatlar' => 'Yatlar',
     'iletisim' => 'İletişim',
     'galeri' => 'Galeri',
     'referanslar'   => 'Referanslar',
+    'hakkimizda'   => 'Hakkımızda',
+    
+    'banner_text_1' => 'Boğazda Rüya Gibi Bir Deneyim',
+    'banner_text_2' => 'Boğazın Sihirli Dokunuşuyla Unutulmaz Anlar',
+    'anasayfa_slogan' => 'BOĞAZIN EŞSİZ GÜZELLİĞİNDE TEKNE TURLARI',
+
     'ik' => 'İ.K.',
     'blog' => 'Blog',
 
@@ -19,12 +27,8 @@ return [
     'teklifiste'  => 'Teklif İste',
     'urunkategorileri'  => 'Ürün Kategorileri',
     'urunler'  => 'Ürünler',
-    'yedekparca'  => 'Yedek Parça',
-    'haberler' => 'Haberler - Duyurular',
     'devaminioku' => "Devamını Oku",
     'incele' =>  'İncele',
-    'musteri' => "Müşteri",
-    'deneyim' => "Yıllık Deneyim",
     'iletisimegec' => "İletişime Geç",
 
     'form_info' => 'Formu doldurarak bizlere hızlı bir şekilde email gönderebilirsiniz. Uzman ekibimiz en kısa zamanda sizlere dönüş yapacaktır.',

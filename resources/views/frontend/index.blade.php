@@ -20,14 +20,14 @@
     <section id="element-template-01" class="py-50 bt-1 bg-dark b-solid">
         <div class="container">
             <h4 class="text-center text-white">{{ __('site.firmaadi')}} </h4>
-            <h2 class="text-center text-white fs-50">{{ __('site.odullerimiz')}}</h2>
+            <h2 class="text-center text-white fs-50 uppercase">{{ __('site.odullerimiz')}}</h2>
         
             <div id="image-slider-container" class="mt-50 mt-50-sm o-hidden-x mxw-full">
                 <div id="image-slider" class="custom-slider fw-slider container block-img dots-circle c-resize" 
                     data-slick='{"dots": true, "centerMode": true, "speed":600, "arrows": true, "fade": false, "draggable":true, "slidesToShow": 3, "slidesToScroll": 3}'>
                     @foreach ($Odullerimiz->getMedia('gallery') as $item)
                         <div class="px-15 px-5-sm">
-                            <img src="/frontend/images/blog/post_large_slider_loader.svg" 
+                            <img src="/frontend/images/loader2.svg" 
                             data-lazy="{{ $item->getUrl() }}" alt="Denden Yatçılık - Ödüllerimiz" 
                             class="bs-lg">
                         </div>
@@ -44,11 +44,10 @@
 
 
 <div class="relative z-index-1 py-250">
-    <!-- Video - Parent * should have "relative" class -->
     <div
         class="videobg loaded"
         data-background="images/videos/video-2-poster.jpg"
-        style="background-image: url(&quot;images/videos/video-2-poster.jpg&quot;);">
+        style="background-image: url('images/videos/video-2-poster.jpg');">
         <video
             poster="images/videos/video-2-poster.jpg"
             playsinline=""
@@ -59,7 +58,7 @@
                 <source src="/istanbul.mp4" type="video/mp4"></video>
             </div>
             <div class="relative zi-1">
-                <h2 class="t-center white bold fs-40">BOĞAZIN EŞSİZ GÜZELLİĞİNDE TEKNE TURLARI</h2>
+                <h2 class="t-center white bold fs-40">{{ __('site.anasayfa_slogan') }}</h2>
             </div>
         </div>
 
@@ -74,7 +73,7 @@
                 <a href="{{ route('productdetail',  $item->slug)}}" class="cbp-item fashion photography">
                     <div class="keeper bg-white opacity-hover-container">
                         <div class="work-image">
-                            <img src="images/portfolio/masonry_loading.svg" 
+                            <img src="/frontend/images/loader2.svg"  
                             data-cbp-src="{{ (!$item->getFirstMediaUrl('page')) ? '/resimyok.jpg' : $item->getFirstMediaUrl('page', 'thumb') }}"
                              width="700" height="478" alt="Denden Yatçılık - {{ $item->title}}">
                         </div>

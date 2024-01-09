@@ -70,28 +70,26 @@
 					 color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;border-width:0px;letter-spacing:-7px;">
 					 <img src="/denden_logo_b.png" alt="" data-ww="['500px','300px','300px','300px']"
 					 data-hh="['166px','100px','100px','100px']" data-no-retina>  
-					</div>
+				</div>
 
         		<!-- LAYER NR. 3 -->
         		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
         			 id="slide-2800-layer-3"
         			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
         			 data-y="['middle','middle','middle','middle']" data-voffset="['16','16','-54','-89']"
-        						data-width="60"
+        			data-width="60"
         			data-height="3"
         			data-whitespace="nowrap"
-
         			data-type="shape"
         			data-responsive_offset="on"
-
         			data-frames='[{"from":"y:50px;opacity:0;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
         			data-textAlign="['left','left','left','left']"
         			data-paddingtop="[0,0,0,0]"
         			data-paddingright="[0,0,0,0]"
         			data-paddingbottom="[0,0,0,0]"
         			data-paddingleft="[0,0,0,0]"
-
-        			style="z-index: 7;background-color:rgba(2, 26, 48, 1.00);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>
+        			style="z-index: 7;background-color:rgba(2, 26, 48, 1.00);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
+				</div>
 
         		<!-- LAYER NR. 4 -->
         		<div class="tp-caption   tp-resizeme"
@@ -99,8 +97,9 @@
         			 data-x="['center','center','center','center']" data-hoffset="['-10','-10','-10','-10']"
         			 data-y="['middle','middle','middle','middle']" data-voffset="['65','65','-8','-32']"
         						data-fontsize="['40','30','20','16']"
-        			data-width="['800','700','500','360']"
+        			data-width="['800','700','500','400']"
         			data-height="none"
+
         			data-whitespace="['nowrap','nowrap','normal','normal']"
         			data-type="text"
         			data-responsive_offset="on"
@@ -113,13 +112,15 @@
         			data-paddingleft="[0,0,0,0]"
         			style="z-index: 8; min-width: 640px; max-width: 640px; white-space: nowrap; font-size: 40px; 
 					line-height: 40px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Georgia, serif;font-style:italic;border-width:0px;text-transform:uppercase">
-					Boğazda Rüya Gibi Bir Deneyim  </div>
+					{{ __('site.banner_text_1')}} </div>
 
 					<div class="tp-caption   tp-resizeme"
         			 id="slide-2800-layer-2"
         			 data-x="['center','center','center','center']" data-hoffset="['-10','-10','-10','-10']"
-        			 data-y="['middle','middle','middle','middle']" data-voffset="['110','110','110','110']"
-					data-fontsize="['25','25','20','16']"
+        			 data-y="['middle','middle','middle','middle']" data-voffset="['110','110','110','10']"
+					data-fontsize="['25','25','20','20']"
+					data-lineheight="['130','130','100','20']"
+
         			data-width="['640','640','480','400']"
         			data-height="none"
         			data-whitespace="['nowrap','nowrap','normal','normal']"
@@ -134,7 +135,7 @@
         			data-paddingleft="[0,0,0,0]"
         			style="z-index: 8; min-width: 640px; max-width: 640px; white-space: nowrap; font-size: 40px; 
 					line-height: 40px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Georgia, serif;font-style:italic;border-width:0px;">
-					Boğazın Sihirli Dokunuşuyla Unutulmaz Anlar </div>
+					{{ __('site.banner_text_2')}} </div>
 
         		<!-- LAYER NR. 5 -->
         		<div class="tp-caption rev-btn  tp-resizeme"
@@ -161,7 +162,9 @@
         			style="z-index: 9; white-space: nowrap; font-size: 15px; line-height: 46px; font-weight: 700; 
 					color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;background-color:rgba(0, 0, 0, 0);
 					border-color:rgba(255, 255, 255, 0.25);border-style:solid;border-width:2px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;
-					box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">HAKKIMIZDA </div>
+					box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">
+					{{ __('site.hakkimizda')}} 
+				</div>
 
         		<!-- LAYER NR. 6 -->
         		<div class="tp-caption   tp-resizeme"
@@ -204,7 +207,7 @@
         			data-paddingbottom="[0,0,0,0]"
         			data-paddingleft="[50,50,50,50]"
 
-        			style="z-index: 11; white-space: nowrap; font-size: 15px; line-height: 46px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;background-color:rgba(0, 0, 0, 0);border-color:rgba(255, 255, 255, 0.25);border-style:solid;border-width:2px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">İLETİŞİM </div>
+        			style="z-index: 11; white-space: nowrap; font-size: 15px; line-height: 46px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;background-color:rgba(0, 0, 0, 0);border-color:rgba(255, 255, 255, 0.25);border-style:solid;border-width:2px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">{{ __('site.iletisim')}} </div>
         	
 				</li>
     </ul>

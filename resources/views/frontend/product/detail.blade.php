@@ -42,19 +42,20 @@
 
     <div class="container-md">
         <div class="t-center mt-25">
-            <h5 class="fs-11 ls-4 semibold white uppercase">DENDEN DENİZCİLİK</h5>
+            <h5 class="fs-11 ls-4 semibold white uppercase">{{ __('site.firma')}}</h5>
             <h1 class="mt-15 font-secondary lh-md"> {{ $Detay->title }}</h1>
             <div class="mt-30 uppercase fs-12 bold bg-soft-dark3 radius-lg py-10 px-40 d-inline-flex width-auto lh-normal align-items-center">
                 <a href="{{ route('home')}}"><i class="ti-home"></i></a>
                 <i class="ti-angle-right fs-7 mx-15"></i>
-                <a href="{{ route('home')}}">Anasayfa</a>
+                <a href="{{ route('home')}}">{{ __('site.yatlar')}}</a>
                 <i class="ti-angle-right fs-7 mx-15"></i>
-                <a href="#" class="stay c-default opacity-7">Yatlar</a>
+                <a href="#" class="stay c-default opacity-7">{{ __('site.hizmetlerimiz')}}</a>
                 <i class="ti-angle-right fs-7 mx-15"></i>
-                <a href="#" class="stay c-default opacity-7">{{ $Detay->title}}</a>
+                <a href="#" class="stay c-default opacity-7">{{ $Detay->title }}</a>
             </div>
         </div>
     </div>
+
 </section>
 
 @if($Detay->desc != null)
@@ -64,6 +65,23 @@
         </span>
     </div>
 @endif
+<div class="container mb-50 mt-20">
+    <div class="row">
+
+        <div class="col-md-4 col-12">
+            <div class="card">
+                <div class="card-header">Featured</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+              </div>
+        </div>
+
+    </div>
+  
+</div>
 <div class="container mb-50 mt-20">
     <div id="gallery-items" class="lightbox_gallery">
         @foreach ($Detay->getMedia('gallery') as $item)

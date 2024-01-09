@@ -72,8 +72,10 @@
 
                             </div>
                         @endforeach
-                    </div>
 
+                        
+                    </div>
+                   
                 </div>
 
             </div>
@@ -282,9 +284,20 @@
                 </div>
                 {{Form::close()}}
 
-                @if($Edit->getFirstMediaUrl('gallery'))
-                    <div class="card mt-2" style="height: calc(30rem + 10px)">
-                    <div class="card-body card-body-scrollable card-body-scrollable-shadow">
+              
+            </div>
+
+        </div>
+        <div class="col-md-9">
+            @if($Edit->getFirstMediaUrl('gallery'))
+            <div class="card mt-2" style="height: calc(30rem + 10px)">
+                <div class="card-header">
+                    <h4 class="card-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2" /><line x1="9" y1="13" x2="15" y2="13" /></svg>
+                        Resimler
+                    </h4>
+                </div>
+                <div class="card-body card-body-scrollable card-body-scrollable-shadow">
                     <div class="table-responsive ">
                         <table class="table table-hover table-striped table-bordered table-center">
                             <thead>
@@ -298,7 +311,7 @@
                             @foreach($Edit->getMedia('gallery') as $item)
                                 <tr id="gallery_{{$item->id}}">
                                     <td>
-                                        {{ $item }}
+                                        <img src="{{ $item->getUrl() }}" width="75px" >
                                     </td>
                                     <td>
                                         <form action="{{route('page.deleteGaleriDelete', $Edit->id)}}" method="POST">
@@ -317,10 +330,8 @@
                         </table>
                     </div>
                 </div>
-                </div>
-                @endif
             </div>
-
+        @endif
         </div>
     </div>
 

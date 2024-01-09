@@ -1,49 +1,51 @@
 <?php
-
 return [
-    'firma' => 'DENDEN Yachts',
-    'firmaadi' => 'DENDEN Yachts',
+    'firma' => 'DENDEN Maritime',
+    'firmaadi' => 'DENDEN Maritime',
     'telefon' => 'Phone',
     'email' => 'Email',
     'adres' => 'Address',
-    'anasayfa' => 'Home',
+    'anasayfa' => 'Homepage',
     'kurumsal' => 'Corporate',
-    'iletisim' => 'Contact Us',
+    'hizmetlerimiz' => 'Our Services',
+    'yatlar' => 'Yachts',
+    'iletisim' => 'Contact',
     'galeri' => 'Gallery',
-    'blog' => 'Blog',
-    'referanslar'   => 'References',
-    'ik' => 'H.R.',
+    'referanslar' => 'References',
+    'hakkimizda' => 'About Us',
 
-    'teklifiste'  => 'Get Offer',
-    'urunkategorileri'  => 'Product Categories',
-    'urunler'  => 'Products',
-    'yedekparca'  => 'Spare part',
-    'haberler' => 'News - Announcements',
+    'banner_text_1' => 'A Dreamlike Experience on the Bosphorus',
+    'banner_text_2' => 'Unforgettable Moments with the Magical Touch of the Bosphorus',
+    'anasayfa_slogan' => 'BOAT TOURS IN THE UNIQUE BEAUTY OF THE BOSPHORUS',
+
+    'ik' => 'H.R.',
+    'blog' => 'Blog',
+
+    'odullerimiz' => 'Our Awards',
+
+    'teklifiste' => 'Request a Quote',
+    'urunkategorileri' => 'Product Categories',
+    'urunler' => 'Products',
     'devaminioku' => "Read More",
-    'incele' =>  'Review',
-    'musteri' => "Customer",
-    'deneyim' => "Years of Experience",
+    'incele' => 'Explore',
     'iletisimegec' => "Contact Us",
 
-
-    'form_info' => 'You can send us an email quickly by filling out the form. Our expert team will get back to you as soon as possible.',
-    'form_bilgial' => 'Get Info',
-    'form_adsoyad' => 'Nane Surname',
-    'form_telefon' => 'Phone Number',
-    'form_email' => 'Email Address',
-    'form_konu' => 'Subject',
-    'form_mesaj' => 'Message',
+    'form_info' => 'Fill out the form to send us an email quickly. Our expert team will get back to you as soon as possible.',
+    'form_bilgial' => 'Get Information',
+    'form_adsoyad' => 'Your Name and Surname',
+    'form_telefon' => 'Your Phone Number',
+    'form_email' => 'Your Email Address',
+    'form_konu' => 'Message Subject',
+    'form_mesaj' => 'Your Message',
     'form_submit' => 'Send Message',
 
-
-    //Link Önekleri
+    // Link Prefixes
     'urun_link' => 'machines',
     'yedekparca_link' => 'sparepart',
     'galeri_link' => 'gallery',
     'iletisim_link' => 'contact',
     'blog_link' => 'blog',
-    'kurumsal_link' =>  'corporate',
-    'referans_link' =>  'reference',
-    'kategori_link' =>  'category',
-
+    'kurumsal_link' => 'corporate',
+    'referans_link' => 'reference',
+    'kategori_link' => 'category',
 ];

@@ -9,19 +9,20 @@
 
     <div class="container-md">
         <div class="t-center mt-25">
-            <h5 class="fs-11 ls-4 semibold white uppercase">DENDEN DENİZCİLİK</h5>
+            <h5 class="fs-11 ls-4 semibold white uppercase">{{ __('site.firma')}}</h5>
             <h1 class="mt-15 font-secondary lh-md"> {{ $Detay->title }}</h1>
             <div class="mt-30 uppercase fs-12 bold bg-soft-dark3 radius-lg py-10 px-40 d-inline-flex width-auto lh-normal align-items-center">
                 <a href="{{ route('home')}}"><i class="ti-home"></i></a>
                 <i class="ti-angle-right fs-7 mx-15"></i>
-                <a href="{{ route('home')}}">Anasayfa</a>
+                <a href="{{ route('home')}}">{{ __('site.anasayfa')}}</a>
                 <i class="ti-angle-right fs-7 mx-15"></i>
-                <a href="#" class="stay c-default opacity-7">Hizmetlerimiz</a>
+                <a href="#" class="stay c-default opacity-7">{{ __('site.hizmetlerimiz')}}</a>
                 <i class="ti-angle-right fs-7 mx-15"></i>
-                <a href="#" class="stay c-default opacity-7">{{ $Detay->title}}</a>
+                <a href="#" class="stay c-default opacity-7">{{ $Detay->title }}</a>
             </div>
         </div>
     </div>
+
 </section>
 @if($Detay->desc)
 <div id="elementDescription" class="container py-50">
