@@ -17,6 +17,8 @@ return [
     'banner_text_1' => 'Une Expérience de Rêve sur le Bosphore',
     'banner_text_2' => 'Des Moments Inoubliables avec la Magie du Bosphore',
     'anasayfa_slogan' => 'TOURS EN BATEAU DANS LA BEAUTÉ UNIQUE DU BOSPHORE',
+    'yatlar_altmetin_1' => 'La location de yacht Denden est un excellent choix pour une expérience de vacances de luxe.',
+    'yatlar_altmetin_2' => 'Elle offre une opportunité unique de passer des moments agréables en mer.',
 
     'ik' => 'R.H.', // Ressources Humaines
     'blog' => 'Blog',
@@ -27,6 +29,8 @@ return [
     'urunkategorileri' => 'Catégories de Produits',
     'urunler' => 'Produits',
     'devaminioku' => "Lire la Suite",
+    'hepsinigor' => "Voir Tout",
+
     'incele' => 'Explorer',
     'iletisimegec' => "Contactez-Nous",
 

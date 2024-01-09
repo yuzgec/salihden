@@ -35,7 +35,7 @@
                 </div>
                 <div class="mt-30 container t-center">
                     <a href="{{ route('corporatedetail', $Odullerimiz->slug)}}" target="_blank" class="lg-btn inline-block mt-30 bg-colored bg-colored1-hover white fs-11 bold uppercase slow-sm">
-                        Hepsini Görüntüle
+                        {{ __('site.hepsinigor')}}
                     </a>
                 </div>
             </div>
@@ -64,9 +64,11 @@
 
     <div id="portfolio-grid" class="pb-120 pt-90" style="background: url('/back.jpg')">
         <div class="container">
-            <h4 class="text-center text-white">{{ __('site.firmaadi')}} </h4>
-            <h2 class="text-center text-white fs-50">DENDEN DENİZCİLİK</h2>
-            <p class="text-center text-white">Denden yat kiralama lüks bir tatil deneyimi için mükemmel bir seçenektir.<br> Denizde keyifli dakikalar geçirmek için eşsiz bir fırsat sunuyor.</p>
+            <h4 class="text-center text-white">{{ __('site.yatlar')}} </h4>
+            <h2 class="text-center text-white fs-50">{{ __('site.firmaadi')}}</h2>
+            <p class="text-center text-white">{{ __('site.yatlar_altmetin_1')}}
+                <br> {{ __('site.yatlar_altmetin_2')}}
+            </p>
          
             <div id="portfolio-items" class="portfolio-items mt-40">
                 @foreach ($Product as $item)

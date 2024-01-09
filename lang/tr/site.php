@@ -9,7 +9,7 @@ return [
     'anasayfa' => 'Anasayfa',
     'kurumsal' => 'Kurumsal',
     'hizmetlerimiz' => 'Hizmetlerimiz',
-    'yatlar' => 'Yatlar',
+    'yatlar' => 'Yatlarımız',
     'iletisim' => 'İletişim',
     'galeri' => 'Galeri',
     'referanslar'   => 'Referanslar',
@@ -18,6 +18,8 @@ return [
     'banner_text_1' => 'Boğazda Rüya Gibi Bir Deneyim',
     'banner_text_2' => 'Boğazın Sihirli Dokunuşuyla Unutulmaz Anlar',
     'anasayfa_slogan' => 'BOĞAZIN EŞSİZ GÜZELLİĞİNDE TEKNE TURLARI',
+    'yatlar_altmetin_1' => 'Denden yat kiralama lüks bir tatil deneyimi için mükemmel bir seçenektir.',
+    'yatlar_altmetin_2' => 'Denizde keyifli dakikalar geçirmek için eşsiz bir fırsat sunuyor.',
 
     'ik' => 'İ.K.',
     'blog' => 'Blog',
@@ -28,6 +30,7 @@ return [
     'urunkategorileri'  => 'Ürün Kategorileri',
     'urunler'  => 'Ürünler',
     'devaminioku' => "Devamını Oku",
+    'hepsinigor' => "Hepsini Görüntüle",
     'incele' =>  'İncele',
     'iletisimegec' => "İletişime Geç",
 

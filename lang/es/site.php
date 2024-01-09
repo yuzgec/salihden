@@ -18,6 +18,9 @@ return [
     'banner_text_2' => 'Momentos Inolvidables con el Toque Mágico del Bósforo',
     'anasayfa_slogan' => 'TOURS EN BARCO EN LA BELLEZA ÚNICA DEL BÓSFORO',
 
+    'yatlar_altmetin_1' => 'El alquiler de yates Denden es una excelente opción para una experiencia de vacaciones de lujo.',
+    'yatlar_altmetin_2' => 'Ofrece una oportunidad única para pasar momentos agradables en el mar.',
+
     'ik' => 'R.H.', // Recursos Humanos
     'blog' => 'Blog',
 
@@ -27,6 +30,8 @@ return [
     'urunkategorileri' => 'Categorías de Productos',
     'urunler' => 'Productos',
     'devaminioku' => "Leer Más",
+    'hepsinigor' => "Ver Todo",
+
     'incele' => 'Explorar',
     'iletisimegec' => "Póngase en Contacto",
 

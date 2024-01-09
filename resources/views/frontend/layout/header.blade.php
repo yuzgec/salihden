@@ -7,12 +7,17 @@
                 class="col-lg-6 col-sm-12 d-flex t-left t-center-sm justify-content-lg-start justify-content-center hidden-sm">
                 <a
                     href="tel:{{ config('settings.telefon2')}}"
-                    class="fs-14 mr-30 white underline-hover-slide underline-slide underline-white">
+                    class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
                     <i class="fas fa-phone-volume mt-5"></i>&nbsp;{{ config('settings.telefon2')}}
                 </a>
                 <a
+                href="tel:{{ config('settings.telefon2')}}"
+                class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
+                <i class="fas fa-phone-volume mt-5"></i>&nbsp;{{ config('settings.telefon1')}}
+            </a>
+                <a
                     href="mailto:{{ config('settings.email1')}}"
-                    class="fs-14 mr-30 white underline-hover-slide underline-slide underline-white">
+                    class="fs-16 mr-30 white underline-hover-slide underline-slide underline-white">
                     <i class="far fa-envelope mt-5"></i>&nbsp;{{ config('settings.email1')}}
                 </a>
               
@@ -27,10 +32,10 @@
                 </a>
                 @endforeach
 
-                <a href="tel:{{ config('settings.telefon1')}}"
+                {{-- <a href="tel:{{ config('settings.telefon1')}}"
                     class="visible-lg nav-button bg-colored white uppercase bold slow hover-cursor fs-16" 
                     title="444 9 409">{{ config('settings.telefon1')}}
-                </a>
+                </a> --}}
                 
                 </div>
             </div>

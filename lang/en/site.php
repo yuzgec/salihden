@@ -18,6 +18,9 @@ return [
     'banner_text_2' => 'Unforgettable Moments with the Magical Touch of the Bosphorus',
     'anasayfa_slogan' => 'BOAT TOURS IN THE UNIQUE BEAUTY OF THE BOSPHORUS',
 
+    'yatlar_altmetin_1' => 'Denden yacht rental is an excellent choice for a luxurious holiday experience.',
+    'yatlar_altmetin_2' => 'It offers a unique opportunity to spend enjoyable moments at sea.',
+
     'ik' => 'H.R.',
     'blog' => 'Blog',
 
@@ -27,6 +30,8 @@ return [
     'urunkategorileri' => 'Product Categories',
     'urunler' => 'Products',
     'devaminioku' => "Read More",
+    'hepsinigor' => "View All",
+
     'incele' => 'Explore',
     'iletisimegec' => "Contact Us",
 
