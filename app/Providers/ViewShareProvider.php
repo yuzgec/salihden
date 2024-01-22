@@ -30,7 +30,7 @@ class ViewShareProvider extends ServiceProvider
             define('SWEETALERT_MESSAGE_DELETE', 'Silindi');
 
             Paginator::useBootstrap();
-            //config()->set('settings', Setting::pluck('value','item')->all());
+            config()->set('settings', Setting::pluck('value','item')->all());
 
             $Pages =  Page::with('getCategory')->orderBy('rank', 'asc')->get();
             $Service =  Service::with('getCategory')->orderBy('rank', 'asc')->get();
