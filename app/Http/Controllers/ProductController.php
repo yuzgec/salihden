@@ -105,7 +105,7 @@ class ProductController extends Controller
         $Delete->media()->where('id', \request('image_id'))->delete();
 
         toast(SWEETALERT_MESSAGE_DELETE,'success');
-        return redirect()->route('page.edit', $id);
+        return redirect()->route('product.edit', $id);
 
     }
 }
