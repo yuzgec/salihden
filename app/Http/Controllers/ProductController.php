@@ -97,4 +97,15 @@ class ProductController extends Controller
         $update->status = $request->status == "true" ? 1 : 0 ;
         $update->save();
     }
+
+
+    public function deleteGaleriDelete($id){
+
+        $Delete = Product::find($id);
+        $Delete->media()->where('id', \request('image_id'))->delete();
+
+        toast(SWEETALERT_MESSAGE_DELETE,'success');
+        return redirect()->route('page.edit', $id);
+
+    }
 }
