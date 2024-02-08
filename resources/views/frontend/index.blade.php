@@ -92,13 +92,11 @@
 
 
     <div class="container mt-20">
-        <h4 class="text-center text-dark">EXOTIC DESTINATIONS</h4>
-        <h2 class="text-center text-dark fs-50 uppercase">NEW PLACES</h2>
-        <p class="text-center text-dark">Take a cruise and spend pleasant moments with the Denden yacht... </p>
+        <h4 class="text-center text-dark">{{ __('site.rota1')}}</h4>
+        <h2 class="text-center text-dark fs-50 uppercase">{{ __('site.rota2')}}</h2>
+        <p class="text-center text-dark">{{ __('site.rota3')}} </p>
         <div id="hotspots1" class="hotspots">
-
             <img src="images/blocks/block_loader.svg" data-src="/map.jpg" alt="Kiralık Tekneler - İstanbul Boğazı" class="mb-50">
-            
             <div class="items">
                 <div style="left:41%; top:38%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
                     <div class="width-25 width-25-sm height-25 height-25-sm icon-animated circle bg-success active-inview"
