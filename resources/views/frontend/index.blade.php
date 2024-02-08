@@ -1,7 +1,6 @@
 @extends('frontend.layout.app')
 @section('customCSS')
     <link rel="stylesheet" href="/frontend/css/revolutionslider/settings.css" />
-
     <style>
         .portfolio-items, .portfolio-items .cbp-wrapper-outer, .portfolio-items .cbp-item{overflow:visible;}
         .portfolio-items .cbp-item:hover{z-index: 150;}
@@ -15,6 +14,7 @@
     </style>
 @endsection
 @section('content')
+
     @include('frontend.layout.slider')
 
     <section id="element-template-01" class="py-50 bt-1 bg-dark b-solid">
@@ -90,15 +90,101 @@
 
     </div>
 
+
+    <div class="container mt-20">
+        <h4 class="text-center text-dark">EXOTIC DESTINATIONS</h4>
+        <h2 class="text-center text-dark fs-50 uppercase">NEW PLACES</h2>
+        <p class="text-center text-dark">Take a cruise and spend pleasant moments with the Denden yacht... </p>
+        <div id="hotspots1" class="hotspots">
+
+            <img src="images/blocks/block_loader.svg" data-src="/map.jpg" alt="Kiralık Tekneler - İstanbul Boğazı" class="mb-50">
+            
+            <div class="items">
+                <div style="left:41%; top:38%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
+                    <div class="width-25 width-25-sm height-25 height-25-sm icon-animated circle bg-success active-inview"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    title="Çırağın Sarayı"
+                    data-bs-content="<img src='/frontend/place/ciragin.jpg'>"></div>
+                </div>
+
+                <div style="left:38%; top:41%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
+                    <div class="width-25 width-25-sm height-25 height-25-sm icon-animated circle bg-success active-inview"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    title="Four Seasons Bosphorus"
+                    data-bs-content="<img src='/frontend/place/Four-Seasons-Bosphorus.jpg'>"></div>
+                </div>
+
+                <div style="left:25%; top:60%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
+                    <div class="width-25 width-25-sm height-25 height-25-sm circle bg-white icon-animated1 b-white active-inview"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    title="The Peninsula Istanbul"
+                    data-bs-content="<img src='/frontend/place/The-Peninsula-Istanbul.jpg'>"></div>
+                </div>
+
+                <div style="left:35%; top:42%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
+                    <div class="width-25 width-25-sm height-25 height-25-sm circle bg-white icon-animated1 b-white active-inview"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    title="Shangri-La Bosphorus İstanbul"
+                    data-bs-content="<img src='/frontend/place/Shangri-La-Bosphorus-İstanbul.jpg'>"></div>
+                </div>
+
+                <div style="left:30%; top:50%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
+                    <div class="width-25 width-25-sm height-25 height-25-sm circle bg-white icon-animated1 b-white active-inview"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    title="Mandarin"
+                    data-bs-content="<img src='/frontend/place/mandarin.jpg'>"></div>
+                </div>
+
+
+                <div style="left:50%; top:28%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
+                    <div class="width-25 width-25-sm height-25 height-25-sm circle bg-white icon-animated1 b-white active-inview"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    title="Sortie"
+                    data-bs-content="<img src='/frontend/place/sortie.jpg'>"></div>
+                </div>
+
+                <div style="left:52%; top:25%;" class="item animated fast" data-animation="zoomInReverse" data-animation-delay="200">
+                    <div class="width-25 width-25-sm height-25 height-25-sm circle bg-white icon-animated1 b-white active-inview"
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    title="Oligark İstanbul"
+                    data-bs-content="<img src='/frontend/place/Oligark-İstanbul.jpg'>"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
 @endsection
 
 @section('customJS')
 
-  <!-- Script for portfolio -->
   <script>
     (function($, window, document, undefined) {
         'use strict';
-        // init cubeportfolio
         $('#portfolio-items').cubeportfolio({
             mediaQueries: [{
                 width: 992,
@@ -122,7 +208,6 @@
             displayTypeSpeed: 60,
         });
 
-        //Get .active class for filters
         $(".cbp-filter-item-active").addClass("active");
         $("[data-filter]").on("click", function(){
             $("[data-filter]").removeClass("active");
@@ -213,7 +298,7 @@
     }
 
     RsTypewriterAddOn(tpj, revapi1014);
-    });	/*ready*/
+    });
 
 </script>
 @endsection

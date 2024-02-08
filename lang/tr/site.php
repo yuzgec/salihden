@@ -14,6 +14,10 @@ return [
     'galeri' => 'Galeri',
     'referanslar'   => 'Referanslar',
     'hakkimizda'   => 'Hakkımızda',
+
+    'rota1' => 'EGZOTİK DESTİNASYONLAR',
+    'rota2' => 'YENİ YERLER',
+    'rota3' => 'Denden yatı ile bir yolculuğa çıkın ve hoş anlar geçirin...',
     
     'banner_text_1' => 'Boğazda Rüya Gibi Bir Deneyim',
     'banner_text_2' => 'Boğazın Sihirli Dokunuşuyla Unutulmaz Anlar',

@@ -14,6 +14,10 @@ return [
     'referanslar' => 'Références',
     'hakkimizda' => 'À Propos de Nous',
 
+    'rota1' => 'DESTINATIONS EXOTIQUES',
+    'rota2' => 'NOUVEAUX LIEUX',
+    'rota3' => 'Faites une croisière et passez des moments agréables avec le yacht Denden...',
+
     'banner_text_1' => 'Une Expérience de Rêve sur le Bosphore',
     'banner_text_2' => 'Des Moments Inoubliables avec la Magie du Bosphore',
     'anasayfa_slogan' => 'TOURS EN BATEAU DANS LA BEAUTÉ UNIQUE DU BOSPHORE',

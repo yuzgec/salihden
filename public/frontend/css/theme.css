@@ -770,7 +770,7 @@
 	.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before{border-left-color:#2F2F2F;}
 /* Popover */
 	[data-bs-toggle="popover"]{cursor:pointer;position:relative;}
-	.popover{border:none;outline:none;padding:25px;min-width:280px;z-index:2000;color:#717171;border-radius:18px;box-shadow:0 18px 60px 0 rgba(0,0,0,0.15);}
+	.popover{border:none;outline:none;padding:12px;min-width:280px;z-index:2000;color:#717171;border-radius:18px;box-shadow:0 18px 60px 0 rgba(0,0,0,0.15);}
 	.popover .popover-header{background-color:transparent;padding:0;margin:0;border:none!important;}
 	.popover-body{padding:0;color:inherit;}
 	.popover>.arrow{display:none!important;}

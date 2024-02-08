@@ -14,6 +14,10 @@ return [
     'referanslar' => 'Referencias',
     'hakkimizda' => 'Acerca de Nosotros',
 
+    'rota1' => 'DESTINOS EXÓTICOS',
+    'rota2' => 'NUEVOS LUGARES',
+    'rota3' => 'Toma un crucero y pasa momentos agradables con el yate Denden...',
+
     'banner_text_1' => 'Una Experiencia de Ensueño en el Bósforo',
     'banner_text_2' => 'Momentos Inolvidables con el Toque Mágico del Bósforo',
     'anasayfa_slogan' => 'TOURS EN BARCO EN LA BELLEZA ÚNICA DEL BÓSFORO',

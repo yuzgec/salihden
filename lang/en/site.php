@@ -14,6 +14,11 @@ return [
     'referanslar' => 'References',
     'hakkimizda' => 'About Us',
 
+
+    'rota1' => 'EXOTIC DESTINATIONS',
+    'rota2' => 'NEW PLACES',
+    'rota3' => 'Take a cruise and spend pleasant moments with the Denden yacht...',
+
     'banner_text_1' => 'A Dreamlike Experience on the Bosphorus',
     'banner_text_2' => 'Unforgettable Moments with the Magical Touch of the Bosphorus',
     'anasayfa_slogan' => 'BOAT TOURS IN THE UNIQUE BEAUTY OF THE BOSPHORUS',
