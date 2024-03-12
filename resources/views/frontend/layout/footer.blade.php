@@ -66,8 +66,8 @@
                 <div class="py-30 row align-items-center justify-content-lg-between justify-content-center">
                     <div class="col-lg col-12-sm gray6 fs-13 t-left t-center-sm">©  {{ date('Y')}} {{ __('site.firma')}} All Rights Reserved.</div>
                     <div class="col-lg col-12-sm mt-5-sm gray6 fs-13 t-right t-center-sm">
-                        <a href="#" target="_blank" class="white-hover slow">Privacy Policy</a> | 
-                        <a href="#" target="_blank" class="white-hover slow">Terms and Condition</a>
+                        <a href="#" class="white-hover slow">Privacy Policy</a> | 
+                        <a href="#" class="white-hover slow">Terms and Condition</a>
                     </div>
                 </div>
             </div>

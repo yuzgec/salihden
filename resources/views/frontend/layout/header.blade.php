@@ -96,7 +96,7 @@
                             @endforeach
                         </ul>
                     </li>
-                    <li><a href="{{ route('home')}}" class="nav-link">Blog</a></li>
+                    <li><a href="{{ route('blog')}}" class="nav-link">Blog</a></li>
                     <li class="dd-toggle">
                         <a href="#" class="nav-link">{{ __('site.referanslar')}}</a>
                         <ul class="dropdown-menu ">

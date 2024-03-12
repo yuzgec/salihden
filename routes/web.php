@@ -10,7 +10,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
     Route::get(__('site.iletisim_link'), [HomeController::class, 'contactus'])->name('contactus');
     Route::get(__('site.referans_link'), [HomeController::class, 'reference'])->name('reference');
     Route::get(__('site.galeri_link'), [HomeController::class, 'gallery'])->name('gallery');
-    Route::get(__('site.blog_link'), [HomeController::class, 'blog'])->name('blog');
+    Route::get('blogs', [HomeController::class, 'blog'])->name('blog');
+    Route::get('blog/{url}', [HomeController::class, 'blogdetail'])->name('blogdetail');
 
     Route::get(__('site.kurumsal_link').'/{url}', [HomeController::class, 'corporatedetail'])->name('corporatedetail');
     Route::get('/hizmetlerimiz/{url}', [HomeController::class, 'servicedetail'])->name('servicedetail');

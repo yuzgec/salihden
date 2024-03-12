@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use App\Models\Blog;
 use App\Models\Page;
 use App\Models\Pivot;
 use App\Models\Product;
-use App\Models\ProductCategory;
 use App\Models\Service;
-use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
+use App\Models\ProductCategory;
+use Artesaos\SEOTools\Facades\SEOMeta;
 
 class HomeController extends Controller
 {
@@ -97,9 +98,16 @@ class HomeController extends Controller
     }
 
     public function blog(){
-
-        return view('frontend.blog.index');
+        $All =  Blog::all();
+        return view('frontend.blog.index',compact('All'));
     }
 
+    public function blogdetail($url){
+        $Detay = blog::whereHas('translations', function ($query) use ($url) {
+            $query->where('slug', $url);
+        })->first();
+
+        return view('frontend.blog.detail', compact('Detay'));
+    }
 
 }
