@@ -163,7 +163,10 @@
 					color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;background-color:rgba(0, 0, 0, 0);
 					border-color:rgba(255, 255, 255, 0.25);border-style:solid;border-width:2px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;
 					box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">
-					{{ __('site.hakkimizda')}} 
+					  @foreach ($Pages->where('category', 1) as $item)
+					  	<a href="{{ route('corporatedetail',  $item->slug)}}">{{ __('site.hakkimizda')}} </a>
+				 	 @endforeach
+					
 				</div>
 
         		<!-- LAYER NR. 6 -->
@@ -185,7 +188,8 @@
         			data-paddingbottom="[0,0,0,0]"
         			data-paddingleft="[0,0,0,0]"
 
-        			style="z-index: 10; white-space: nowrap; font-size: 25px; line-height: 25px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Georgia, serif;font-style:italic;border-width:0px;"> -  </div>
+        			style="z-index: 10; white-space: nowrap; font-size: 25px; line-height: 25px; font-weight: 400;
+					 color: rgba(255, 255, 255, 1.00);font-family:Georgia, serif;font-style:italic;border-width:0px;"> -  </div>
 
         		<!-- LAYER NR. 7 -->
         		<div class="tp-caption rev-btn  tp-resizeme"
@@ -197,17 +201,22 @@
         			data-whitespace="nowrap"
 
         			data-type="button"
-        			data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
         			data-responsive_offset="on"
 
-        			data-frames='[{"from":"x:50px;opacity:0;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 0);bw:2px 2px 2px 2px;"}]'
+        			data-frames='[{"from":"x:50px;opacity:0;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+					{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut",
+					"to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 0);bw:2px 2px 2px 2px;"}]'
         			data-textAlign="['left','left','left','left']"
         			data-paddingtop="[0,0,0,0]"
         			data-paddingright="[50,50,50,50]"
         			data-paddingbottom="[0,0,0,0]"
         			data-paddingleft="[50,50,50,50]"
 
-        			style="z-index: 11; white-space: nowrap; font-size: 15px; line-height: 46px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;background-color:rgba(0, 0, 0, 0);border-color:rgba(255, 255, 255, 0.25);border-style:solid;border-width:2px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">{{ __('site.iletisim')}} </div>
+        			style="z-index: 11; white-space: nowrap; font-size: 15px; line-height: 46px; font-weight: 700; 
+					color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;background-color:rgba(0, 0, 0, 0);
+					border-color:rgba(255, 255, 255, 0.25);border-style:solid;border-width:2px;border-radius:4px 4px 4px 4px;
+					outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">
+					<a href="{{route('contactus')}}"> {{ __('site.iletisim')}} </a></div>
         	
 				</li>
     </ul>

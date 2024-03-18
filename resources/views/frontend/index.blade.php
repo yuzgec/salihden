@@ -91,7 +91,7 @@
     </div>
 
 
-    <div class="container mt-20 d-none d-sm-block">
+    {{-- <div class="container mt-20 d-none d-sm-block">
         <h4 class="text-center text-dark">{{ __('site.rota1')}}</h4>
         <h2 class="text-center text-dark fs-50 uppercase">{{ __('site.rota2')}}</h2>
         <p class="text-center text-dark">{{ __('site.rota3')}} </p>
@@ -171,7 +171,7 @@
                 
             </div>
         </div>
-    </div>
+    </div> --}}
 
 
     </div>
