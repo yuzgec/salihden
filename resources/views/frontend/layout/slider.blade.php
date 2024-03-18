@@ -163,7 +163,7 @@
 					color: rgba(255, 255, 255, 1.00);font-family:Arial, Helvetica, sans-serif;background-color:rgba(0, 0, 0, 0);
 					border-color:rgba(255, 255, 255, 0.25);border-style:solid;border-width:2px;border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;
 					box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:5px;cursor:pointer;">
-					  @foreach ($Pages->where('category', 1) as $item)
+					  @foreach ($Pages->where('category', 1)->take(1) as $item)
 					  	<a href="{{ route('corporatedetail',  $item->slug)}}">{{ __('site.hakkimizda')}} </a>
 				 	 @endforeach
 					
