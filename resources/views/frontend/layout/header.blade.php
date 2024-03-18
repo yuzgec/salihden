@@ -69,9 +69,11 @@
                     <li class="dd-toggle">
                         <a href="#" class="nav-link">{{__('site.kurumsal')}}</a>
                         <ul class="dropdown-menu">
-                            @foreach ($Pages->where('category', 1) as $item)
+                            @foreach ($Pages->whereIn('category',[1,3]) as $item)
                                 <li>
-                                    <a href="{{ route('corporatedetail',  $item->slug)}}" class="nav-link">{{ $item->title }}</a>
+                                    <a href="{{ route('corporatedetail',  $item->slug)}}" class="nav-link">
+                                        {{ $item->title }}
+                                    </a>
                                 </li>
                             @endforeach
                         </ul>
